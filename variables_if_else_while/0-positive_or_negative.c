@@ -3,9 +3,10 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* main - positive or negative of random number
+/**
+ * main - positive negative of random number
  *
- * Return: 0 for success 
+ * Return: 0 for success
  */
 int main(void)
 {
