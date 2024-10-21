@@ -3,7 +3,10 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/* main - positive or negative of random number
+ *
+ * Return: 0 for success 
+ */
 int main(void)
 {
 	int n;
