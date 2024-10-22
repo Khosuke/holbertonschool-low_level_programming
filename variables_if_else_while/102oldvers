@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+/**
+ * main - combinations of three single digits
+ *
+ * Return: 0 for success
+ */
+int main(void)
+{
+	int a, b, y, z;
+
+	for (a = '0'; a <= '9'; a++)
+	{
+		for (b = '0'; b <= '9'; b++)
+		{
+			for (y = a; y <= '9'; y++)
+			{
+				for (z = b + 1; z <= '9'; z++)
+				{
+					putchar(a);
+					putchar(b);
+					putchar(' ');
+					putchar(y);
+					putchar(z);
+					/* if (a != '9' && b != '8')*/
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
+}
