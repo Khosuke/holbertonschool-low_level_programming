@@ -4,7 +4,7 @@
  * print_last_digit - print the last digit of a number
  * @n: number to check
  *
- * Return: value of last digit
+ * Return: 0 for success
  */
 int print_last_digit(int n)
 {
@@ -13,11 +13,12 @@ int print_last_digit(int n)
 	if (n >= 0)
 	{
 		last = n % 10;
-		return (last);
+		_putchar(last + '0');
 	}
 	else
 	{
 		last = (n * -1) % 10;
-		return (last);
+		_putchar(last + '0');
 	}
+	return (0);
 }
