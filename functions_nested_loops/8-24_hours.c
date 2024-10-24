@@ -5,11 +5,11 @@
  * @hour: var for hours
  * @minute: var for minutes
  *
- * Return: 0 for success
+ * Return: void nothing to return
  */
-int jack_bauer()
+void jack_bauer(void)
 {
-	int hour,minute;
+	int hour, minute;
 
 	for (hour = 0; hour < 24; hour++)
 	{
@@ -23,5 +23,4 @@ int jack_bauer()
 			_putchar('\n');
 		}
 	}
-	return (0);
 }
