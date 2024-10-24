@@ -2,8 +2,6 @@
 
 /**
  * jack_bauer - print the hours and minutes
- * @hour: var for hours
- * @minute: var for minutes
  *
  * Return: void nothing to return
  */
