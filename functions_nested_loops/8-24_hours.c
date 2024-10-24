@@ -1,13 +1,27 @@
 #include "main.h"
 
 /**
+ * jack_bauer - print the hours and minutes
+ * @hour: var for hours
+ * @minute: var for minutes
  *
- *
- *
- * Return: 
+ * Return: 0 for success
  */
-int jack_bauer();
+int jack_bauer()
 {
+	int hour,minute;
 
+	for (hour = 0; hour < 24; hour++)
+	{
+		for (minute = 0; minute < 60; minute++)
+		{
+			_putchar((hour / 10) + '0');
+			_putchar((hour % 10) + '0');
+			_putchar(':');
+			_putchar((minute / 10) + '0');
+			_putchar((minute % 10) + '0');
+		}
+	}
+	_putchar('\n');
+	return (0);
 }
-
