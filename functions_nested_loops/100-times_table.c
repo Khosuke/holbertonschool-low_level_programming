@@ -16,20 +16,28 @@ void print_times_table(int n)
 			for (idx2 = 0; idx2 <= n; idx2++)
 			{
 				rslt = idx1 * idx2;
-				if (rslt > 99) {
-					_putchar((rslt / 100) + '0'); /* Print the first character of a three digit number */
+				if (rslt > 99) 
+				{
+					/* Print the first character of a three digit number */
+					_putchar((rslt / 100) + '0');
 				}
-				else if (idx2 > 0) {
+				else if (idx2 > 0) 
+				{
 					_putchar(' ');
 				}
-				if (rslt > 9) {
-					_putchar(((rslt % 100) / 10 ) + '0'); /* Print the second character of a three digit number */
+				if (rslt > 9)
+				{
+					/* Print the second character of a three digit number */
+					_putchar(((rslt % 100) / 10 ) + '0'); 
 				}
-				else if (idx2 > 0) {
+				else if (idx2 > 0) 
+				{
 					_putchar(' ');
 				}
-				_putchar((rslt % 10) + '0'); /* Print the third character of a three digit number */ 
-				if (idx2 < n) {
+				/* Print the third character of a three digit number */
+				_putchar((rslt % 10) + '0');
+				if (idx2 < n)
+				{
 					_putchar(',');
 					_putchar(' ');
 				}
