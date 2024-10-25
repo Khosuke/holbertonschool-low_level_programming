@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * print_to_98 - print from a n²umber to 98
+ * @n: number to print from
  *
  * Return: nothing to return
  */
