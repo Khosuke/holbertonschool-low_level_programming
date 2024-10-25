@@ -1,22 +1,25 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * print_to_98 - print from a number to 98
+ * print_to_98 - print from a n²umber to 98
  *
  * Return: nothing to return
  */
 void print_to_98(int n)
-{ 
-	while (n <= 98)
+{
+	while (n != 98)
 	{
-		_putchar((n / 10) + '0');
-		_putchar((n % 10) + '0');
 		if (n < 98)
 		{
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ",n);
+			n++;
 		}
-		n++;
+		else if (n > 98)
+		{
+			printf("%d, ",n);
+			n--;
+		}
 	}
-	_putchar('\n');
+	printf("%d\n",n);
 }
