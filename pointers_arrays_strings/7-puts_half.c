@@ -12,9 +12,10 @@ void puts_half(char *str)
 	{
 		size = i;
 	}
+	size = i - 1;
 	if (size % 2 == 0)
 	{
-		n = ((size - 1) / 2);
+		n = ((size) / 2) + 1;
 	}
 	else
 	{
