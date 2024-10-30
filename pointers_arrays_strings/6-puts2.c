@@ -15,7 +15,7 @@ void puts2(char *str)
 			size = i;
 		}
 	}
-	while (j < size)
+	while (j <= size)
 	{
 		if (str[j] != '\0')
 		{
