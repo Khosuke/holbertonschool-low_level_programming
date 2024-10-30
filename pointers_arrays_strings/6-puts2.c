@@ -17,7 +17,7 @@ void puts2(char *str)
 	}
 	while (j < size)
 	{
-		if (size % 2 == 0)
+		if (str[j] != '\0')
 		{
 			_putchar(str[j]);
 		}
