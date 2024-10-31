@@ -34,9 +34,13 @@ int _atoi(char *s)
 			num = s[i] - 48;
 			j++;
 		}
+		else if (sign == -1)
+		{
+			num = num * 10 * sign + ((s[i] - 48) * sign);
+		}
 		else
 		{
-			num = num * 10 +  s[i] - 48;
+			num = num * 10 +  (s[i] - 48);
 		}
 		i++;
 	}
