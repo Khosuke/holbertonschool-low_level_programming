@@ -15,6 +15,7 @@ int _atoi(char *s)
 	{
 		if (s[i] == '-')
 		{
+			/* count the number of minus sign */
 			k += 1;
 		}
 		if (k % 2 != 0)
@@ -23,6 +24,7 @@ int _atoi(char *s)
 		}
 		if (s[i] == '\0')
 		{
+			/* return if no number or empty string */
 			return (0);
 		}
 		i++;
@@ -31,12 +33,15 @@ int _atoi(char *s)
 	{
 		if (j == 0)
 		{
-			num = s[i] - 48;
+			if(sign == -1)
+				num = (s[i] - 48) * sign;
+			else
+				num = s[i] - 48;
 			j++;
 		}
 		else if (sign == -1)
 		{
-			num = num * 10 * sign + ((s[i] - 48) * sign);
+			num = (num * 10) + ((s[i] - 48) * sign);
 		}
 		else
 		{
