@@ -14,7 +14,7 @@ int _atoi(char *s)
 	while (s[i] < '0' || s[i] > '9')
 	{
 		if (s[i] == '-')
-		{
+		{	
 			/* count the number of minus sign */
 			k += 1;
 		}
@@ -27,7 +27,12 @@ int _atoi(char *s)
 			/* return if no number or empty string */
 			return (0);
 		}
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			break;
+		}
 		i++;
+
 	}
 	while (s[i] >= '0' && s[i] <= '9')
 	{
