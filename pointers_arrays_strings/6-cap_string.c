@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * cap_string : capitalize each word
+ * *cap_string : capitalize each word
  * @str: string to transform
  *
  * Return: the string transformed
@@ -9,7 +9,7 @@
 char *cap_string(char *str)
 {
 	int i, j;
-	char sprt[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	char c[13] = {' ', '\t', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
 	if (str[0] >= 97 && str[0] <= 122)
 	{
@@ -19,7 +19,7 @@ char *cap_string(char *str)
 	{
 		for (j = 0; j < 13; j++)
 		{
-			if (str[i] == sprt[j])
+			if (str[i] == c[j] || str[i] == 10)
 			{
 				if (str[i + 1] >= 97 && str[i + 1] <= 122)
 				{
