@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *cap_string : capitalize each word
+ * *cap_string - capitalize each word
  * @str: string to transform
  *
  * Return: the string transformed
