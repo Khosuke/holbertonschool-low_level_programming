@@ -3,7 +3,7 @@
 /**
  * print_chessboard - print a chessboard
  * @a: content and size of the chessboard
- * 
+ *
  * Return: nothing to return
  */
 void print_chessboard(char (*a)[8])
