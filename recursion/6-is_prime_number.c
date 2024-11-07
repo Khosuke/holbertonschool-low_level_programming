@@ -2,8 +2,8 @@
 
 /**
  * is_prime - checks if a number is prime
- * @n: number we're searching 
- * @x: number to check 
+ * @n: number we're searching
+ * @x: number to check
  *
  * Return: itself until it find if number is prime or not
  */
