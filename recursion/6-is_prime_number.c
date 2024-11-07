@@ -5,7 +5,7 @@
  * @n: number we're searching 
  * @x: number to check 
  *
- * Return: n and it's square root
+ * Return: itself until it find if number is prime or not
  */
 int is_prime(int n, int x)
 {
