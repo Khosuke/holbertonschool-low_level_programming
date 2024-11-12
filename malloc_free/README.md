@@ -8,3 +8,6 @@ File: 1-strdup.c
 
 Task 2 - Write a function that concatenates two strings.
 File: 2-str_concat.c
+
+Task 3 - Write a function that returns a pointer to a 2 dimensional array of integers.
+File: 3-alloc_grid.c
