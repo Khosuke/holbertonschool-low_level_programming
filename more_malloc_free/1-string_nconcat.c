@@ -43,6 +43,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		sncat[i] = s1[i];
 		i++;
 	}
+	if (n > size2)
+	{
+		n = size2;
+	}
 	while (j < n && n <= size2)
 	{
 		sncat[i] = s2[j];
