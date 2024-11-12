@@ -5,3 +5,6 @@ File: 0-create_array.c
 
 Task 1 - Write a function that returns a pointer to a newly allocated space in memory, which contains a copy of the string given as a parameter.
 File: 1-strdup.c
+
+Task 2 - Write a function that concatenates two strings.
+File: 2-str_concat.c
