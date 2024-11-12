@@ -4,9 +4,9 @@
 
 /**
  * str_concat - concatenates two strings
- * @s1: string one 
+ * @s1: string one
  * @s2: string two
- * 
+ *
  * Return: Null on failure
  */
 char *str_concat(char *s1, char *s2)
@@ -27,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		size1++;
 	}
-	while(s2[size2] != '\0')
+	while (s2[size2] != '\0')
 	{
 		size2++;
 	}
