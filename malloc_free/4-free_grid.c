@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 /**
- * free_grid - 
- * @grid: 
- * @height: 
+ * free_grid - Free the memory of a 2D grid created by another function
+ * @grid: the previously created grid
+ * @height: the grid height
  *
- * Return: 
+ * Return: No return
  */
 void free_grid(int **grid, int height)
 {
