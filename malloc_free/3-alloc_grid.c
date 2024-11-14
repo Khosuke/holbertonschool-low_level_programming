@@ -12,23 +12,23 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int h = 0, w = 0;
+	int h = 0, w = 0, i;
 	int **arrgrid;
 
 	if (width <= 0 || height <= 0)
-	{
 		return (NULL);
-	}
 	arrgrid = malloc(height * sizeof(int *));
 	if (arrgrid == NULL)
-	{
 		return (NULL);
-	}
 	while (h < height)
 	{
 		arrgrid[h] = malloc(width * sizeof(int));
 		if (arrgrid[h] == NULL)
 		{
+			for (i = 0; i <= h; i++)
+			{
+				free(arrgrid[i]);
+			}
 			free(arrgrid);
 			return (NULL);
 		}
