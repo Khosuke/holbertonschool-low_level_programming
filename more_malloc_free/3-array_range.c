@@ -20,6 +20,8 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 	arrint = malloc((max - min + 1) * sizeof(int));
+	if(arrint == NULL)
+		return (NULL);
 	while (min <= max)
 	{
 		arrint[i] = min;
