@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * get_op_function - Select correct function to perform operation asked by user
+ * get_op_func - Select correct function to perform operation asked by user
  * @s: the operator chosen by user
  *
  * Return: pointer to function corresponding to the correct operator
@@ -14,12 +14,12 @@ int (*get_op_func(char *s))(int, int)
 	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
-        {"*", op_mul},
-        {"/", op_div},
-        {"%", op_mod},
-        {NULL, NULL}
-    };
-    int i = 0;
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
+	int i = 0;
 
 	while (*ops[i].op != *s)
 	{
