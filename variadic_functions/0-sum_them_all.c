@@ -11,9 +11,9 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	int result = 0, i = 0;
-
 	va_list ptr;
-	va_start(ptr , n);
+
+	va_start(ptr, n);
 	while (i < n)
 	{
 		i++;
