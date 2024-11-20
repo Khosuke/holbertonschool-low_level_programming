@@ -1,7 +1,8 @@
 #include "variadic_functions.h"
-#include <stdio.h>
 #include <stdarg.h>
 #include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * print_char - print a char
@@ -27,9 +28,7 @@ void print_int(va_list ap)
  */
 void print_float(va_list ap)
 {
-	float f = va_arg(ap, double);
-
-	printf("%f", f);
+	printf("%f", va_arg(ap, double));
 }
 
 /**
@@ -40,11 +39,11 @@ void print_str(va_list ap)
 {
 	char *str = va_arg(ap, char*);
 
-	if (str != NULL)
+	if (str == NULL)
 	{
-		printf("%s", str);
-	}	
-	printf("(nil)");
+		str = "(nil)";
+	}
+	printf("%s", str);
 }
 
 /**
