@@ -1,8 +1,6 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
-#include <string.h>
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * print_char - print a char
@@ -66,7 +64,7 @@ void print_all(const char * const format, ...)
 	va_list ptr;
 
 	va_start(ptr, format);
-	while (i < strlen(format))
+	while (format[i] != '\0')
 	{
 		j = 0;
 		while (j < 4)
