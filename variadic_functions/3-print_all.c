@@ -2,6 +2,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 
+
 /**
  * print_char - print a char
  * @ap: the list of args
@@ -64,7 +65,7 @@ void print_all(const char * const format, ...)
 	va_list ptr;
 
 	va_start(ptr, format);
-	while (format[i] != '\0' && format[i] != NULL)
+	while (format[i] != '\0' && format != NULL)
 	{
 		j = 0;
 		while (j < 4)
