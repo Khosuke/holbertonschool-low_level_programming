@@ -9,9 +9,7 @@
  */
 void print_char(va_list ap)
 {
-	char c = va_arg(ap, int);
-
-	printf("%c", c);
+	printf("%c", va_arg(ap, int));
 }
 
 /**
@@ -20,9 +18,7 @@ void print_char(va_list ap)
  */
 void print_int(va_list ap)
 {
-	int n = va_arg(ap, int);
-
-	printf("%d", n);
+	printf("%d", va_arg(ap, int));
 }
 
 /**
@@ -45,7 +41,9 @@ void print_str(va_list ap)
 	char *str = va_arg(ap, char*);
 
 	if (str != NULL)
+	{
 		printf("%s", str);
+	}	
 	printf("(nil)");
 }
 
