@@ -3,9 +3,9 @@
 /**
  * _strlen - count the number of element in the string
  * @str: string to count
- * return: the length of the string
+ * Return: the length of the string
  */
-int _strlen(const char *str)
+unsigned int _strlen(const char *str)
 {
 	unsigned int i = 0;
 
