@@ -1,6 +1,22 @@
 #include "lists.h"
 
 /**
+ * _strlen -
+ * @str: 
+ * return:
+ */
+int _strlen(char *str)
+{
+	unsigned int i = 0;
+
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+
+/**
  * add_node - function that add a new node
  * at the beginning of a list_t list
  * @head: the list we want to add element
@@ -17,7 +33,7 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 	new_node->str = strdup(str);
-	new_node->len = strlen(str);
+	new_node->len = _strlen(str);
 	new_node->next = *head;
 	*head = new_node;
 	return (*head);
