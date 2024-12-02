@@ -1,11 +1,11 @@
 #include "lists.h"
 
 /**
- * _strlen -
- * @str: 
- * return:
+ * _strlen - count the number of element in the string
+ * @str: string to count
+ * return: the length of the string
  */
-int _strlen(char *str)
+int _strlen(const char *str)
 {
 	unsigned int i = 0;
 
