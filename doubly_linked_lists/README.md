@@ -14,3 +14,6 @@ File: 3-add_dnodeint_end.c
 
 Task 4 - Write a function that frees a dlistint_t list.
 File: 4-free_dlistint.c
+
+Task 5 - Write a function that returns the nth node of a dlistint_t linked list.
+File: 5-get_dnodeint.c
