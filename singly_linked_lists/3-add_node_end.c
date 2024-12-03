@@ -20,7 +20,7 @@ unsigned int _strlen(const char *str)
  * add_node_end - Add a new node at end of linked list
  * @head: the linked list
  * @str: the string to add in the new node
- * 
+ *
  * Return: The address of the new element
  */
 list_t *add_node_end(list_t **head, const char *str)
