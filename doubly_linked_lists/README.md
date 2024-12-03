@@ -11,3 +11,6 @@ File: 2-add_dnodeint.c
 
 Task 3 - Write a function that adds a new node at the end of a dlistint_t list.
 File: 3-add_dnodeint_end.c
+
+Task 4 - Write a function that frees a dlistint_t list.
+File: 4-free_dlistint.c
