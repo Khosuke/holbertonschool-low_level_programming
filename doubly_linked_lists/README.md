@@ -20,3 +20,6 @@ File: 5-get_dnodeint.c
 
 Task 6 - Write a function that returns the sum of all the data (n) of a dlistint_t linked list.
 File: 6-sum_dlistint.c
+
+Task 7 - Write a function that inserts a new node at a given position.
+File: 7-insert_dnodeint.c
