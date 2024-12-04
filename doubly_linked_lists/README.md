@@ -17,3 +17,6 @@ File: 4-free_dlistint.c
 
 Task 5 - Write a function that returns the nth node of a dlistint_t linked list.
 File: 5-get_dnodeint.c
+
+Task 6 - Write a function that returns the sum of all the data (n) of a dlistint_t linked list.
+File: 6-sum_dlistint.c
