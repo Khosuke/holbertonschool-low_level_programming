@@ -8,3 +8,6 @@ File: 1-create_file.c
 
 Task 2 - Write a function that appends text at the end of a file.
 File: 2-append_text_to_file.c
+
+Task 3 - Write a program that copies the content of a file to another file.
+File: 3-cp.c
