@@ -14,25 +14,22 @@ int copyfile(char *file_from, char *file_to)
 	char *buf[1024];
 
 	fd_from = open(file_from, O_RDONLY);
-	if (fd_from == -1)
+	read_from = read(fd_from, buf, 1024);
+	if (fd_from == -1 || read_from == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
 	fd_to = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	if (fd_to == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
-		exit(99);
-	}
-	while ((read_from = read(fd_from, buf, 1024)) > 0)
+	while (read_from > 0)
 	{
 		w_to = write(fd_to, buf, read_from);
-		if (w_to == -1 || read_from == -1)
+		if (w_to == -1 || fd_to == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 			exit(99);
 		}
+		read_from = read(fd_from, buf, 1024);
 	}
 	cls_file = close(fd_from);
 	if (cls_file == -1)
